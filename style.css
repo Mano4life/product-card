@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    width: 40em;
+    height: 30em;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#dimg{
+    flex-basis: 50%;
+}
+
+.content{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: hsl(212, 21%, 14%);
+}
+
+
+.description{
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+}
+
+.pricing{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.price1{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+}
+
+.price2{
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+button{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 20px;
+    background: hsl(158, 36%, 37%);
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+
+@media (max-width: 500px) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 65%;
+        overflow: hidden;
+    }
+    #dimg{
+        display: none;
+    }
+    #mimg{
+        display: block !important;
+        flex-basis: 50%;
+    }
+    .content{
+        flex-basis: 50%;
+        height: 100em;
+        padding: 20px;
+        gap: 5px;
+    }
+    .description{
+        padding: 1px;
+    }
+}
